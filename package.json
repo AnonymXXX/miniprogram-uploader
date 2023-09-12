@@ -1,0 +1,24 @@
+{
+  "name": "miniprogram-uploader",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts",
+    "build": "tsc",
+    "link": "yarn link"
+  },
+  "bin": {
+    "art": "./dist/index.js"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.1.1",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
